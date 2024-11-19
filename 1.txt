@@ -89,7 +89,32 @@ Observations:
    4- 'year_of_establishment': 246
 
 7- Unique entries in columns with float datatype:
-   1-
+   1- 'district_code': 668 (<district name as some values are missing)
+   2- 'subdistrict_code': 4578
+   3- 'pincode': 18319
+   4- ['longitude','latitude']: 1270858 (Number of Unique values for combination of longitude and latitude) 
+   5- 'class_from': [ 0.,  1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.,  9., 10., 11.]), 12
+   6- 'class_to': [12.,  8.,  5., 10.,  4.,  9.,  7.,  2.,  3.,  6.,  1., 11.,  0.]), 13
+
+    # I am only taking some of the remaining columns.
+
+   7- 'pre_primary': 166
+   8- 'class_rooms': 175
+   9- 'total_teachers': 248
+   10- 'class_students': 3719
+
+   Most of these columns don't have float values (Remove the decimal and covert to int)
+
+8- Columns with missing values:
+   'aff_board_h_sec'                    1243056
+   'ward'                               1157260
+   'aff_board_sec'                      1124378
+   'subdistrict_code'                    458917
+   'pincode'                             450033
+   'subdistrict_name'                    348557
+   'district_code'                       100472
+   'village_name'                             1
+   'location_type'                            1
 
 Questions:
 1- Why is the datatype of some columns like pincode, class_from, class_to , etc. float and not integer?
@@ -97,3 +122,9 @@ Questions:
 3- How many schools,districts,villages, etc. have the same name?
 4- How many columns have no duplicates?
 5- Can some columns be deleted (like state_code)?
+6- Which columns contain numerical data and which contain categorical data?
+7- Which columns contain continuous data and which contain discrete data?
+8- Which columns have missing data? Can we categorise the type of missing data?
+9- Do some columns have missing values which is not shown by .isnull()?
+10- What to do with the missing data?
+
