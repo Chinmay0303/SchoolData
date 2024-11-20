@@ -121,10 +121,16 @@ Questions:
 2- How many columns have wrong dataype? 
 3- How many schools,districts,villages, etc. have the same name?
 4- How many columns have no duplicates?
-5- Can some columns be deleted (like state_code)?
+5- Can some columns be deleted? Redundant columns (like status,state_code)?
 6- Which columns contain numerical data and which contain categorical data?
 7- Which columns contain continuous data and which contain discrete data?
-8- Which columns have missing data? Can we categorise the type of missing data?
+8- Which columns have missing data? Percentage of missing data? Can we categorise the type of missing data?
 9- Do some columns have missing values which is not shown by .isnull()?
 10- What to do with the missing data?
+11- How many number of schools in each state,district,village, etc?
+12- Central tendencies and dispersion for numerical features?
+13- What can we do with the year column (group by each year, 5 years period, a decade, 50 years...)?
+14- Association and relationships b/w different features?
+15- Combinations of different columns: (teacher-student ratios: total_teachers / total students.
+                                       Class capacity: class_students / class_rooms)
 
